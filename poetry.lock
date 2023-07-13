@@ -2365,21 +2365,23 @@ pbr = ">=2.0.0,<2.1.0 || >2.1.0"
 
 [[package]]
 name = "taskiq"
-version = "0.4.1"
+version = "0.8.2"
 description = "Distributed task queue with full async support"
 category = "dev"
 optional = false
-python-versions = ">=3.7,<4.0"
+python-versions = ">=3.8.1,<4.0.0"
 files = [
-    {file = "taskiq-0.4.1-py3-none-any.whl", hash = "sha256:9860b3ccf31cef131332f8ec59ae503c035212d0b71a16fa9261314caafee6e8"},
-    {file = "taskiq-0.4.1.tar.gz", hash = "sha256:37aaf0bfe80c4e4b9601ac0e40f17f3b23fe0b0a19699e4a10313b8ee832618e"},
+    {file = "taskiq-0.8.2-py3-none-any.whl", hash = "sha256:19ed9871b6dfda9dd492c7f378768f503b5ec0b93b672155e9ecc68ba4d7cfd1"},
+    {file = "taskiq-0.8.2.tar.gz", hash = "sha256:74fc90244e173ce8ad522b921f63d8a0c804bab02ea514c7a40295f2aee011ff"},
 ]
 
 [package.dependencies]
+anyio = ">=3,<4"
 gitignore-parser = {version = ">=0,<1", optional = true, markers = "extra == \"reload\""}
 importlib-metadata = "*"
+packaging = ">=19"
 pycron = ">=3.0.0,<4.0.0"
-pydantic = ">=1.6.2,<2.0.0"
+pydantic = ">=1.0,<=3.0"
 taskiq_dependencies = ">=1,<2"
 typing-extensions = ">=3.10.0.0"
 watchdog = {version = ">=2.1.9,<3.0.0", optional = true, markers = "extra == \"reload\""}
